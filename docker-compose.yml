@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+
+  node:
+    build:
+      context: .
+      dockerfile: ${PWD}/Dockerfile
+    ports:
+      - "8888:8888"
+    volumes:
+      - ${PWD}/data:/home/node/app
+    stdin_open: true
+    tty: true
