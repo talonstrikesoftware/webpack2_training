@@ -1,11 +1,12 @@
-This is my training project for webpack
+# Webpack Training Project
+
 
 To start:
 
 ```bash
 docker-compose up -d
 docker-compose exec node bash
-# npm run build
+Once in container: npm run build
 ```
 
 ##Tags
