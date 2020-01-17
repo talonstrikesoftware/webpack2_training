@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npm run clean && webpack",
+    "build": "NODE_ENV=production npm run clean && webpack -p",
     "clean": "rimraf dist",
-    "serve": "webpack-dev-server --host 0.0.0.0 --port 8888"
+    "serve": "webpack-dev-server --host 0.0.0.0 --port 8888",
+    "deploy": "npm run build && git subtree push --prefix dist origin gh-pages"
   },
   "repository": "https://github.com/StephenGrider/WebpackProject",
   "author": "",
