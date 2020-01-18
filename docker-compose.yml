@@ -8,6 +8,7 @@ services:
       dockerfile: ${PWD}/Dockerfile
     ports:
       - "8888:8888"
+      - "3050:3050"
     volumes:
       - ${PWD}/data:/home/node/app
     stdin_open: true
